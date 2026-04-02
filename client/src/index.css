@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-void text-zinc-100 font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.glass-card {
+  @apply bg-zinc-900/50 backdrop-blur-md border border-zinc-800 rounded-2xl shadow-xl;
+}
+
+.neon-text-toxic {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+}
+
+.neon-text-drama {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.7);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b; 
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #39FF14; 
+}

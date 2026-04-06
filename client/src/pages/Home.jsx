@@ -6,7 +6,7 @@ import { LogOut, Save, Share2, Sparkles, Skull, LifeBuoy, History as HistoryIcon
 import { Link } from 'react-router-dom';
 import ResultCard from '../components/ResultCard';
 
-const API_BASE = 'http://localhost:5000/api/ai';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/ai';
 
 export default function Home() {
   const { user, signOut, themeMode, setThemeMode } = useStore();
